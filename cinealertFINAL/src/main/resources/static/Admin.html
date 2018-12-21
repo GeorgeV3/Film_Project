@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+
+<link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/Footer-Basic.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/styles.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+.tabcontent{display: block; overflow:auto; margin-bottom:200px; }
+table{margin:10px 0 10px 0;}
+
+</style>
+</head>
+
+<body>
+	<nav
+		class="navbar navbar-light navbar-expand-md navigation-clean-search"
+		style="background-color: #82c6f8;">
+		<div class="container">
+			<a class="navbar-brand" href="Home.html"><img width="25%" src="https://i.imgur.com/nNLf7t6.gif" border=0></a>
+			<button class="navbar-toggler" data-toggle="collapse"
+				data-target="#navcol-1">
+				<span class="sr-only">Toggle navigation</span><span
+					class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navcol-1">
+				<ul class="nav navbar-nav">
+					<li class="nav-item" role="presentation"><a
+						class="nav-link active" href="AboutUs.html"><strong>About us</strong></a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link"
+						href="#"><strong>Contact us</strong></a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link"
+						href="#"><strong>Donate</strong></a></li>
+				</ul>
+				<form class="form-inline mr-auto" target="_self">
+					<div class="form-group">
+						<label for="search-field"><i class="fa fa-search"
+							style="color: rgb(116, 60, 60);"></i></label><input
+							class="form-control search-field" type="search" name="search"
+							id="search-field" style="background-color: #e7e7e7;" placeholder="Search">
+					</div>
+				</form>
+
+
+			</div>
+
+		</div>
+
+
+		<div id="koubaki" style="margin-right: 1%">
+			<button id="mapbutton"  class="btn btn-link btn-block"  type="button"
+				onclick=" window.open('https://www.google.com/maps/place/Coffee+Island/@37.980772,23.7300943,17z/data=!3m1!4b1!4m5!3m4!1s0x14a1bd3a39f7f275:0x59f0c81708e88bf!8m2!3d37.980772!4d23.732283','_blank')"><span style="color:black"><strong>Find us</strong> </span><span style="color: "><i class="material-icons">place</i></span>
+				</button>
+		</div>
+		<a class="btn btn-dark action-button" role="button"
+			href="Login.html"> Sign out
+		</a>
+	 
+	</nav>
+	
+
+	<br>
+	<br>
+	<br>
+
+	<div class="tab">
+		<button class="tablinks" id="b1" onclick="openCity(event, 'Users')">Manage Users</button>
+		<button class="tablinks" id="b2" onclick="openCity(event, 'Msges')">View All Messages</button>
+	
+	</div>
+
+	<div id="Users" class="tabcontent">
+		
+		
+
+		<table id="test"></table>
+
+	</div>
+
+	<div id="Msges" class="tabcontent">
+		
+		<table id="test2"></table>
+		
+	</div>
+
+	<div id="divaki2" style="z-index:10">
+<div class="form-group" id="divaki" style="width:200px">
+  <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1">
+    <option>FilmFan</option>
+    <option>Critic</option>
+   <option>Delete User</option>
+  </select>
+</div>
+	<button class="btn btn-default">Submit Changes</button>
+	</div>
+	
+
+
+
+	<script type="text/javascript">
+		$(function() {
+			$("#divaki2").hide();
+			$("#Msges").hide();
+			
+		});
+	</script>
+
+
+
+	
+
+	<script type="text/javascript">
+	
+	var username = localStorage.getItem("username");
+	var role = localStorage.getItem("useRole");
+	
+	$("#b2").click(function() {
+		
+		$('#test tr').remove();
+		var urls = '/findAllMsg';
+		$.ajax({
+			type: 'GET',
+			url: urls,
+			success: function (humans){
+ 				$("#test").append('<tr ><th>Title</th><th>Description</th><th>Sender</th><th>Date</th><th>Action</th></tr>')
+			 	$.each(humans, function (i, human){
+					$("#test").append($("#test").append('<tr class = "hhh"><td>'+human.title+'</td><td>'+human.text+'</td><td>'+human.sender+'</td><td>'+human.date+'</td><td><button class="btn btn-info">Edit</button></td></tr>'));
+					
+				}); 
+			}
+		});
+	});  
+	
+	$("#b1").click(function() {
+		
+		$('#test tr').remove();
+		var urll = '/getUsers';
+		$.ajax({
+			type: 'GET',
+			url: urll,
+			success: function (humans){
+ 				$("#test").append('<tr ><th>Username</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Action</th></tr>');
+ 				
+ 				
+			 	$.each(humans, function (i, human){
+			 		
+			 		$("#test").append($("#test").append('<tr class = "hhh"><td>'+human.username+'</td><td>'+human.firstName+'</td><td>'+human.lastName+'</td><td>'+human.email+'</td><td><button class="btn btn-info" id="koumpaki">Edit</button></td></tr>'));
+					
+				}); 
+			}
+		});
+	});  
+	
+	
+	$('#koumpaki').click(function() {
+		$('#divaki2').show();
+		
+	});
+		
+	// show the message box.
+
+	
+	
+	
+	
+
+	
+	</script>
+</body>
+
+</html>
